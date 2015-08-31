@@ -66,6 +66,7 @@ class Parser:
     def parseToStanfordDependencies(self, sentence):
         tree = self.parser.parse(sentence)
         dep = self.gsf.newGrammaticalStructure(tree)
+        dep = dep.typedDependenciesCCprocessed()
         
         return (tree, dep)
                               
