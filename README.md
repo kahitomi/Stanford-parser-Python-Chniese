@@ -25,4 +25,4 @@ Then use as blow
 
 	# tree and dep are refered from java class. Check the type with type(tree)
 	# http://nlp.stanford.edu/nlp/javadoc/javanlp/edu/stanford/nlp/trees/package-tree.html
-	(tree, dep) = parser.parseToStanfordDependencies(u"过于 追求 完美 太 过于 关注 自己")
+	(tree, dep) = my_parser.parseToStanfordDependencies(u"过于 追求 完美 太 过于 关注 自己")
